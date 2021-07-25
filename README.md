@@ -4,12 +4,10 @@
  * Avoid unecessary use of Globals 
  * Add some sort of data logging system for debug and implement a flush cycle 
  * Use proper convetions for creating source files, clean root 
- * No hard coded file paths, assume different PC's will have different file structs (use Argeparse if possible)
- * 
+ * No hard coded file paths, assume different PC's will have different file structs (use Argeparse if possible) 
 
 ## C++ Rules:
 * Makefiles
-
 * Use Clang formatter 
 
 ## Python Rules: 
@@ -29,15 +27,15 @@
 
 * Use DocStrings for Class specifications. 
 ```
+Class GPS
  """
-    RotationCalculator holds helper methods and computation functions for performing
-    point data manipulation. Most functions operate on unit blocks of size 256
+    GPS holds helper methods and computation functions for GPS based localization.
     Methods
     ----------
-    get_spatial_reordering()
-        Returns an array with indices from 0-255 of beam & beamlet indices oriented in freespace.
-    get_local_angles()
-        Returns a matrix of baseline spatial offsets for theta and phi for each set of 256 points
+    get_current_location()
+        Returns two floating point values representing current Latitude and Longitude of the robot.
+    get_corrected_position()
+        Returns corrected robot poisiton based on a fusion of other calibrated sensors (i.e encoder, magnetometer) in the form of Latitude and Longitude.
     """
 ```
 
