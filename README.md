@@ -21,6 +21,16 @@ class Product {
  * Use proper convetions for creating ***file structure*** and keep a clean root. 
 
  * No hard coded ***file paths***, assume different PC's will have different file structs (use argument parsers if possible). 
+ 
+ * Keep fuction sizing small.
+
+
+## ROS:
+* Define an iterface that includes publishers and subcribers with a block diagrams for all embedded classes.
+
+* ROS Documentation built into Scripts
+
+
 
 ## Version Control:
 * Always start a fresh repository with a ***README*** document, which should be updated as the repository grows.
